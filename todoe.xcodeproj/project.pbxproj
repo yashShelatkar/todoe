@@ -17,6 +17,7 @@
 		FE589E4022CEEDE70051E9DE /* TOLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE589E3F22CEEDE70051E9DE /* TOLabel.swift */; };
 		FE589E4322CEF7150051E9DE /* Raleway-v4020-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE589E4222CEF7150051E9DE /* Raleway-v4020-Regular.otf */; };
 		FE589E4522CEF8880051E9DE /* Raleway-v4020-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE589E4422CEF8880051E9DE /* Raleway-v4020-SemiBold.otf */; };
+		FE589E4722CF01990051E9DE /* TOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE589E4622CF01990051E9DE /* TOButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FE589E3F22CEEDE70051E9DE /* TOLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOLabel.swift; sourceTree = "<group>"; };
 		FE589E4222CEF7150051E9DE /* Raleway-v4020-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-Regular.otf"; sourceTree = "<group>"; };
 		FE589E4422CEF8880051E9DE /* Raleway-v4020-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-SemiBold.otf"; sourceTree = "<group>"; };
+		FE589E4622CF01990051E9DE /* TOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				FE04B1D922CED8360099FA50 /* TOGradient.swift */,
 				FE589E3F22CEEDE70051E9DE /* TOLabel.swift */,
+				FE589E4622CF01990051E9DE /* TOButton.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				FE04B1DA22CED8360099FA50 /* TOGradient.swift in Sources */,
 				FE04B1CD22CED2BD0099FA50 /* todoe.xcdatamodeld in Sources */,
 				FE04B1C722CED2BD0099FA50 /* WelcomeController.swift in Sources */,
+				FE589E4722CF01990051E9DE /* TOButton.swift in Sources */,
 				FE04B1C522CED2BD0099FA50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

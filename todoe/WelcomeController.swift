@@ -14,7 +14,7 @@ class WelcomeController: UIViewController {
     let bg: UIView = {
         let view = TOGradient()
         //view.backgroundColor = .cyan
-        view.layer.cornerRadius = 6
+        view.layer.cornerRadius = 24
         return view
     }()
     
@@ -25,9 +25,9 @@ class WelcomeController: UIViewController {
         return label
     }()
    
-    let nextButton = UIButton()
+    let nextButton = TOButton(title: "START WINING")
     
-    let copyRightLabel = TOLabel(title: "© 2019 yashshelatkar", color: .greyZero, size: 14, textAllign: .center)
+    let copyRightLabel = TOLabel(title: "© 2019 yashshelatkar", color: .greyOne, size: 14, textAllign: .center)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,13 +49,17 @@ class WelcomeController: UIViewController {
         titleLabel.topAnchor.constraint(equalTo: bg.topAnchor,constant:60).isActive = true
         
         bg.addSubview(infoLabel)
-        
         infoLabel.centerXAnchor.constraint(equalTo: bg.centerXAnchor).isActive = true
         infoLabel.centerYAnchor.constraint(equalTo: bg.centerYAnchor).isActive = true
         infoLabel.widthAnchor.constraint(equalToConstant: 300).isActive = true
         infoLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         bg.addSubview(nextButton)
+        nextButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        nextButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        nextButton.centerXAnchor.constraint(equalTo: bg.centerXAnchor).isActive = true
+        nextButton.bottomAnchor.constraint(equalTo: bg.bottomAnchor, constant: -60).isActive = true
+        
         
         view.addSubview(copyRightLabel)
         copyRightLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
