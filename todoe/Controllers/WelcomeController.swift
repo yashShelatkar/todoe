@@ -29,8 +29,23 @@ class WelcomeController: UIViewController {
     
     let copyRightLabel = TOLabel(title: "© 2019 yashshelatkar", color: .greyOne, size: 14, textAllign: .center)
     
+    @objc func handleNext(){
+        UIView.animate(withDuration: 0.1, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+            self.nextButton.transform = CGAffineTransform(scaleX: 0.92, y: 0.92)
+        }) { (_) in
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+                self.nextButton.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }) { (_) in
+                self.present(ListController(), animated: true, completion: nil)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nextButton.addTarget(self, action: #selector(self.handleNext), for: [.touchUpInside,.touchUpOutside])
+        
         view.backgroundColor = .white
   //      titleLabel.text = "GET IT DONE"
   //      titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -68,6 +83,7 @@ class WelcomeController: UIViewController {
         copyRightLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
     }
 
+    
 
 }
 
