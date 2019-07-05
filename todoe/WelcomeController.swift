@@ -25,6 +25,9 @@ class WelcomeController: UIViewController {
         return label
     }()
    
+    let nextButton = UIButton()
+    
+    let copyRightLabel = TOLabel(title: "© 2019 yashshelatkar", color: .greyZero, size: 14, textAllign: .center)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,8 +54,18 @@ class WelcomeController: UIViewController {
         infoLabel.centerYAnchor.constraint(equalTo: bg.centerYAnchor).isActive = true
         infoLabel.widthAnchor.constraint(equalToConstant: 300).isActive = true
         infoLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        
+        bg.addSubview(nextButton)
+        
+        view.addSubview(copyRightLabel)
+        copyRightLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        copyRightLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        copyRightLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        copyRightLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
     }
 
 
 }
 
+
+// ©
