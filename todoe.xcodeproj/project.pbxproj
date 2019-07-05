@@ -19,6 +19,7 @@
 		FE589E4522CEF8880051E9DE /* Raleway-v4020-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE589E4422CEF8880051E9DE /* Raleway-v4020-SemiBold.otf */; };
 		FE589E4722CF01990051E9DE /* TOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE589E4622CF01990051E9DE /* TOButton.swift */; };
 		FE589E4A22CF0ACA0051E9DE /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE589E4922CF0ACA0051E9DE /* ListController.swift */; };
+		FE589E4C22CF0C3A0051E9DE /* TOHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE589E4B22CF0C3A0051E9DE /* TOHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FE589E4422CEF8880051E9DE /* Raleway-v4020-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-SemiBold.otf"; sourceTree = "<group>"; };
 		FE589E4622CF01990051E9DE /* TOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOButton.swift; sourceTree = "<group>"; };
 		FE589E4922CF0ACA0051E9DE /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		FE589E4B22CF0C3A0051E9DE /* TOHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				FE04B1D922CED8360099FA50 /* TOGradient.swift */,
 				FE589E3F22CEEDE70051E9DE /* TOLabel.swift */,
 				FE589E4622CF01990051E9DE /* TOButton.swift */,
+				FE589E4B22CF0C3A0051E9DE /* TOHeaderView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				FE04B1C722CED2BD0099FA50 /* WelcomeController.swift in Sources */,
 				FE589E4722CF01990051E9DE /* TOButton.swift in Sources */,
 				FE04B1C522CED2BD0099FA50 /* AppDelegate.swift in Sources */,
+				FE589E4C22CF0C3A0051E9DE /* TOHeaderView.swift in Sources */,
 				FE589E4A22CF0ACA0051E9DE /* ListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
