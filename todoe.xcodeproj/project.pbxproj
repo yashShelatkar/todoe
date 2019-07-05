@@ -12,6 +12,7 @@
 		FE04B1CD22CED2BD0099FA50 /* todoe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE04B1CB22CED2BD0099FA50 /* todoe.xcdatamodeld */; };
 		FE04B1CF22CED2BE0099FA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE04B1CE22CED2BE0099FA50 /* Assets.xcassets */; };
 		FE04B1D222CED2BE0099FA50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE04B1D022CED2BE0099FA50 /* LaunchScreen.storyboard */; };
+		FE04B1DA22CED8360099FA50 /* TOGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE04B1D922CED8360099FA50 /* TOGradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FE04B1CE22CED2BE0099FA50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE04B1D122CED2BE0099FA50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE04B1D322CED2BE0099FA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE04B1D922CED8360099FA50 /* TOGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOGradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				FE04B1D022CED2BE0099FA50 /* LaunchScreen.storyboard */,
 				FE04B1D322CED2BE0099FA50 /* Info.plist */,
 				FE04B1CB22CED2BD0099FA50 /* todoe.xcdatamodeld */,
+				FE04B1D922CED8360099FA50 /* TOGradient.swift */,
 			);
 			path = todoe;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE04B1DA22CED8360099FA50 /* TOGradient.swift in Sources */,
 				FE04B1CD22CED2BD0099FA50 /* todoe.xcdatamodeld in Sources */,
 				FE04B1C722CED2BD0099FA50 /* WelcomeController.swift in Sources */,
 				FE04B1C522CED2BD0099FA50 /* AppDelegate.swift in Sources */,
