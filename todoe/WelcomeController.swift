@@ -19,7 +19,11 @@ class WelcomeController: UIViewController {
     }()
     
    let titleLabel = TOLabel(title: "GET IT DONE", color: .white, size: 24, textAllign: .center)
-    
+   let infoLabel: UILabel = {
+        let label = TOLabel(title: "Welcome GET IT DONE IS. \nA TODO LIST", color: .white, size: 14, textAllign: .center)
+        label.numberOfLines = 2
+        return label
+    }()
    
     
     override func viewDidLoad() {
@@ -40,6 +44,13 @@ class WelcomeController: UIViewController {
         titleLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
         titleLabel.centerXAnchor.constraint(equalTo: bg.centerXAnchor).isActive = true
         titleLabel.topAnchor.constraint(equalTo: bg.topAnchor,constant:60).isActive = true
+        
+        bg.addSubview(infoLabel)
+        
+        infoLabel.centerXAnchor.constraint(equalTo: bg.centerXAnchor).isActive = true
+        infoLabel.centerYAnchor.constraint(equalTo: bg.centerYAnchor).isActive = true
+        infoLabel.widthAnchor.constraint(equalToConstant: 300).isActive = true
+        infoLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
 
 
