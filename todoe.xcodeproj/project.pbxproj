@@ -14,6 +14,7 @@
 		FE04B1D222CED2BE0099FA50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE04B1D022CED2BE0099FA50 /* LaunchScreen.storyboard */; };
 		FE04B1DA22CED8360099FA50 /* TOGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE04B1D922CED8360099FA50 /* TOGradient.swift */; };
 		FE04B1DD22CEDAF00099FA50 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE04B1DC22CEDAF00099FA50 /* extensions.swift */; };
+		FE589E4022CEEDE70051E9DE /* TOLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE589E3F22CEEDE70051E9DE /* TOLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FE04B1D322CED2BE0099FA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE04B1D922CED8360099FA50 /* TOGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOGradient.swift; sourceTree = "<group>"; };
 		FE04B1DC22CEDAF00099FA50 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		FE589E3F22CEEDE70051E9DE /* TOLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		FE04B1C322CED2BD0099FA50 /* todoe */ = {
 			isa = PBXGroup;
 			children = (
+				FE589E3E22CEEDBC0051E9DE /* Custom */,
 				FE04B1DB22CEDAD60099FA50 /* Extensions */,
 				FE04B1C422CED2BD0099FA50 /* AppDelegate.swift */,
 				FE04B1C622CED2BD0099FA50 /* WelcomeController.swift */,
@@ -65,7 +68,6 @@
 				FE04B1D022CED2BE0099FA50 /* LaunchScreen.storyboard */,
 				FE04B1D322CED2BE0099FA50 /* Info.plist */,
 				FE04B1CB22CED2BD0099FA50 /* todoe.xcdatamodeld */,
-				FE04B1D922CED8360099FA50 /* TOGradient.swift */,
 			);
 			path = todoe;
 			sourceTree = "<group>";
@@ -76,6 +78,15 @@
 				FE04B1DC22CEDAF00099FA50 /* extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FE589E3E22CEEDBC0051E9DE /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FE04B1D922CED8360099FA50 /* TOGradient.swift */,
+				FE589E3F22CEEDE70051E9DE /* TOLabel.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE04B1DD22CEDAF00099FA50 /* extensions.swift in Sources */,
+				FE589E4022CEEDE70051E9DE /* TOLabel.swift in Sources */,
 				FE04B1DA22CED8360099FA50 /* TOGradient.swift in Sources */,
 				FE04B1CD22CED2BD0099FA50 /* todoe.xcdatamodeld in Sources */,
 				FE04B1C722CED2BD0099FA50 /* WelcomeController.swift in Sources */,
