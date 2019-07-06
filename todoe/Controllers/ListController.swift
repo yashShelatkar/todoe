@@ -8,7 +8,13 @@
 
 import UIKit
 
-class ListController: UIViewController {
+class ListController: UIViewController,TOHeaderDelegate {
+    
+    
+    func addItem() {
+        print("Trying to add Item from header")
+    }
+    
 
     let header = TOHeaderView(title: "Stuff to get Done", subtitle: "4 left")
     
@@ -21,6 +27,9 @@ class ListController: UIViewController {
         header.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
         header.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
         header.heightAnchor.constraint(equalToConstant:  120).isActive = true
+        
+        header.delegate = self
+        
     }
     
 

@@ -15,6 +15,7 @@ class TOHeaderView: UIView {
     let titleLabel = TOLabel(size:14)
     let subTitleLabel = TOLabel(size:24)
     let addButton = TOButton(title: "+", type: .squareIcon)
+    var delegate: TOHeaderDelegate?
     init(frame: CGRect = .zero, title:String = "header title", subtitle:String = "header subtitile") {
         super.init(frame: frame)
         if frame == .zero {
@@ -23,6 +24,7 @@ class TOHeaderView: UIView {
         self.titleLabel.text = title
         self.subTitleLabel.text = subtitle
         setupLayout()
+        
     }
     
     
@@ -49,7 +51,16 @@ class TOHeaderView: UIView {
         addButton.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         addButton.heightAnchor.constraint(equalToConstant: 24).isActive = true
         addButton.widthAnchor.constraint(equalTo: addButton.heightAnchor, multiplier: 1).isActive = true
+        
+        addButton.addTarget(delegate, action: #selector(self.handleAddButton), for: .touchUpInside)
     }
+    
+    @objc func handleAddButton() {
+        if let delegate = self.delegate{
+            delegate.addItem()
+        }
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
