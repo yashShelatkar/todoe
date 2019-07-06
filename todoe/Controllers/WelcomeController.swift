@@ -27,7 +27,7 @@ class WelcomeController: UIViewController {
         return label
     }()
    
-    let nextButton = TOButton(title: "START WINING")
+    let nextButton = TOButton(title: "START WINING", type: .roundedText)
     
     let copyRightLabel = TOLabel(title: "© 2019 yashshelatkar", color: .greyOne, size: 14, textAllign: .center)
     

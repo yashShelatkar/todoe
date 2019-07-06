@@ -15,11 +15,24 @@ class TOButton: UIButton{
     var title: String!
     
    
-    init(title:String = "button text", frame:CGRect = .zero){
+    init(title:String = "button text", frame:CGRect = .zero, type:ButtonOptions = .roundedText){
         super.init(frame: frame)
         if frame == .zero {
             self.translatesAutoresizingMaskIntoConstraints = false
         }
+        
+        switch type {
+            case .roundedText:
+                self.title = title
+                self.phaseTwo()
+            case .squareIcon:
+                break;
+            default: break;
+            
+        }
+        
+        
+        
         self.title = title
         self.phaseTwo()
         
