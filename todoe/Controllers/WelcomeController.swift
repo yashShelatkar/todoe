@@ -18,6 +18,8 @@ class WelcomeController: UIViewController {
         return view
     }()
     
+    
+    
    let titleLabel = TOLabel(title: "GET IT DONE", color: .white, size: 24, textAllign: .center)
    let infoLabel: UILabel = {
         let label = TOLabel(title: "Welcome GET IT DONE IS. \nA TODO LIST", color: .white, size: 14, textAllign: .center)
