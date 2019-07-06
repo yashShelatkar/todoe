@@ -14,6 +14,7 @@ class TOHeaderView: UIView {
     let bg = TOGradient()
     let titleLabel = TOLabel(size:14)
     let subTitleLabel = TOLabel(size:24)
+    let addButton = TOButton(title: "+", type: .squareIcon)
     init(frame: CGRect = .zero, title:String = "header title", subtitle:String = "header subtitile") {
         super.init(frame: frame)
         if frame == .zero {
@@ -42,6 +43,12 @@ class TOHeaderView: UIView {
         subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
         subTitleLabel.leftAnchor.constraint(equalTo: leftAnchor,constant: 20 + 8).isActive = true
         subTitleLabel.rightAnchor.constraint(equalTo: centerXAnchor,constant: 50).isActive = true
+        
+        addSubview(addButton)
+        addButton.bottomAnchor.constraint(equalTo: subTitleLabel.bottomAnchor).isActive = true
+        addButton.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        addButton.heightAnchor.constraint(equalToConstant: 24).isActive = true
+        addButton.widthAnchor.constraint(equalTo: addButton.heightAnchor, multiplier: 1).isActive = true
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
