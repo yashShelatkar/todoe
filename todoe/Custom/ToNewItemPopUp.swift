@@ -33,9 +33,11 @@ class TONewItemPopup:TOGradient {
     }
     
     @objc func handleAdd() {
+        print("Problem")
         if let delegate = self.delegate, let textFieldText = self.textField.text {
             delegate.addItemToList(text: textFieldText)
         }
+        print("Done")
     }
     
     override init(frame: CGRect = .zero) {
@@ -46,7 +48,7 @@ class TONewItemPopup:TOGradient {
         let inset:CGFloat = 12
         
         self.layer.cornerRadius = 16
-        //        self.layer.masksToBounds = true
+        
         self.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
         addSubview(cancel)
