@@ -10,10 +10,20 @@ import UIKit
 
 class NewItemPopUp:TOGradient {
     
+    let cancel = TOButton(title: "  cancel  ", type: .roundedText, radius: 4)
+    
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
         
+        let insert:CGFloat = 16
+        
         self.layer.cornerRadius = 14
+        
+        
+        addSubview(cancel)
+        cancel.leftAnchor.constraint(equalTo: leftAnchor,constant: insert).isActive = true
+        cancel.topAnchor.constraint(equalTo: topAnchor, constant:  insert).isActive = true
+        cancel.heightAnchor.constraint(equalToConstant: 20).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {

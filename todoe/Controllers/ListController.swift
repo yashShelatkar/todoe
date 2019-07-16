@@ -18,6 +18,8 @@ class ListController: UIViewController,TOHeaderDelegate {
 
     let header = TOHeaderView(title: "Stuff to get Done", subtitle: "4 left")
     let popUp = NewItemPopUp()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
