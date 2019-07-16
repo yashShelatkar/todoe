@@ -17,7 +17,7 @@ class ListController: UIViewController,TOHeaderDelegate {
     
 
     let header = TOHeaderView(title: "Stuff to get Done", subtitle: "4 left")
-    
+    let popUp = NewItemPopUp()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -27,6 +27,12 @@ class ListController: UIViewController,TOHeaderDelegate {
         header.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
         header.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
         header.heightAnchor.constraint(equalToConstant:  120).isActive = true
+        
+        view.addSubview(popUp)
+        popUp.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        popUp.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
+        popUp.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -20).isActive = true
+        popUp.heightAnchor.constraint(equalToConstant:  80).isActive = true
         
         header.delegate = self
         
