@@ -18,7 +18,7 @@ class ListController: UIViewController,TOHeaderDelegate {
 
     let header = TOHeaderView(title: "Stuff to get Done", subtitle: "4 left")
     let popUp = NewItemPopUp()
-    var keyboardHeight:CGFloat = 0
+    var keyboardHeight:CGFloat = 333
     
     override func viewDidAppear(_ animated: Bool) {
          NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardDidShowNotification, object: nil)
@@ -28,10 +28,10 @@ class ListController: UIViewController,TOHeaderDelegate {
         let keyboardSize = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.size
         self.keyboardHeight = keyboardSize.height
         
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
-            self.popUp.transform = CGAffineTransform(translationX: 0, y: -self.keyboardHeight)
-
-        }, completion: nil)
+//        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+//            self.popUp.transform = CGAffineTransform(translationX: 0, y: -self.keyboardHeight)
+//
+//        }, completion: nil)
     }
     
    
@@ -53,6 +53,8 @@ class ListController: UIViewController,TOHeaderDelegate {
         popUp.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -20).isActive = true
         popUp.heightAnchor.constraint(equalToConstant:  80).isActive = true
         
+        popUp.textField.delegate = self
+        
         header.delegate = self
         
     }
@@ -60,4 +62,13 @@ class ListController: UIViewController,TOHeaderDelegate {
 
  
 
+}
+
+extension ListController: UITextFieldDelegate{
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.3, delay: 0.1, usingSpringWithDamping: 0.85, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+            self.popUp.transform = CGAffineTransform(translationX: 0, y: -self.keyboardHeight)
+            
+        }, completion: nil)
+    }
 }
