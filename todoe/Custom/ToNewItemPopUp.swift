@@ -8,11 +8,12 @@
 
 import UIKit
 
-class NewItemPopUp:TOGradient {
+class ToNewItemPopUp:TOGradient {
     
     let cancel = TOButton(title: "  cancel  ", type: .roundedText, radius: 4)
     let add = TOButton(title: "  add  ", type: .roundedText, radius: 4)
     let textField = ToTextField(placeHolder:"Buy IKEA Frames")
+    var delegate:TONewItemDelegate?
     
     @objc func handelCancel(){
         print("try to handel cancel")
@@ -20,6 +21,9 @@ class NewItemPopUp:TOGradient {
     
     @objc func handelAdd(){
         print("try to handel add")
+        if let delegate = self.delegate {
+            delegate.addItemToList()
+        }
     }
     
     override init(frame: CGRect = .zero) {

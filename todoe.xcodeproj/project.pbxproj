@@ -16,7 +16,7 @@
 		FE04B1DD22CEDAF00099FA50 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE04B1DC22CEDAF00099FA50 /* extensions.swift */; };
 		FE320A6B22D15F8E0070B92C /* OptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE320A6A22D15F8E0070B92C /* OptionSet.swift */; };
 		FE320A6D22D167D30070B92C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE320A6C22D167D30070B92C /* Protocols.swift */; };
-		FE3B0CBF22DD4F9D001E863A /* NewItemPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3B0CBE22DD4F9D001E863A /* NewItemPopUp.swift */; };
+		FE3B0CBF22DD4F9D001E863A /* ToNewItemPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3B0CBE22DD4F9D001E863A /* ToNewItemPopUp.swift */; };
 		FE3B0CC122DD59D2001E863A /* ToTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3B0CC022DD59D2001E863A /* ToTextField.swift */; };
 		FE589E4022CEEDE70051E9DE /* TOLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE589E3F22CEEDE70051E9DE /* TOLabel.swift */; };
 		FE589E4322CEF7150051E9DE /* Raleway-v4020-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE589E4222CEF7150051E9DE /* Raleway-v4020-Regular.otf */; };
@@ -38,7 +38,7 @@
 		FE04B1DC22CEDAF00099FA50 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		FE320A6A22D15F8E0070B92C /* OptionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSet.swift; sourceTree = "<group>"; };
 		FE320A6C22D167D30070B92C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		FE3B0CBE22DD4F9D001E863A /* NewItemPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemPopUp.swift; sourceTree = "<group>"; };
+		FE3B0CBE22DD4F9D001E863A /* ToNewItemPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToNewItemPopUp.swift; sourceTree = "<group>"; };
 		FE3B0CC022DD59D2001E863A /* ToTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToTextField.swift; sourceTree = "<group>"; };
 		FE589E3F22CEEDE70051E9DE /* TOLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOLabel.swift; sourceTree = "<group>"; };
 		FE589E4222CEF7150051E9DE /* Raleway-v4020-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-Regular.otf"; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				FE589E3F22CEEDE70051E9DE /* TOLabel.swift */,
 				FE589E4622CF01990051E9DE /* TOButton.swift */,
 				FE589E4B22CF0C3A0051E9DE /* TOHeaderView.swift */,
-				FE3B0CBE22DD4F9D001E863A /* NewItemPopUp.swift */,
+				FE3B0CBE22DD4F9D001E863A /* ToNewItemPopUp.swift */,
 				FE3B0CC022DD59D2001E863A /* ToTextField.swift */,
 			);
 			path = Custom;
@@ -206,7 +206,7 @@
 			files = (
 				FE04B1DD22CEDAF00099FA50 /* extensions.swift in Sources */,
 				FE589E4022CEEDE70051E9DE /* TOLabel.swift in Sources */,
-				FE3B0CBF22DD4F9D001E863A /* NewItemPopUp.swift in Sources */,
+				FE3B0CBF22DD4F9D001E863A /* ToNewItemPopUp.swift in Sources */,
 				FE04B1DA22CED8360099FA50 /* TOGradient.swift in Sources */,
 				FE320A6D22D167D30070B92C /* Protocols.swift in Sources */,
 				FE320A6B22D15F8E0070B92C /* OptionSet.swift in Sources */,

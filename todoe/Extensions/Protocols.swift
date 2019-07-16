@@ -9,15 +9,15 @@
 import Foundation
 
 protocol TOHeaderDelegate {
-    func addItem()
+    func openAddItemPopUp()
     
     
 }
 
-protocol GDNewItemDelegate {
-    func addItemToList(text:String)
+protocol TONewItemDelegate {
+    func addItemToList()
 }
 
-protocol GDListCellDelegate {
+protocol TOListCellDelegate {
     func toggleToDo()
 }

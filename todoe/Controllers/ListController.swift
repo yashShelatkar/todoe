@@ -8,16 +8,19 @@
 
 import UIKit
 
-class ListController: UIViewController,TOHeaderDelegate {
+class ListController: UIViewController,TOHeaderDelegate,TONewItemDelegate {
     
     
-    func addItem() {
-        print("Trying to add Item from header")
+    func openAddItemPopUp() {
+        print("Trying to add Item Popup from header")
     }
     
+    func addItemToList() {
+        print("Trying to add item to list")
+    }
 
     let header = TOHeaderView(title: "Stuff to get Done", subtitle: "4 left")
-    let popUp = NewItemPopUp()
+    let popUp = ToNewItemPopUp()
     var keyboardHeight:CGFloat = 333
     
     override func viewDidAppear(_ animated: Bool) {
