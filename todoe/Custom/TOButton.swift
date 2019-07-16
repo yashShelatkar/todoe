@@ -11,7 +11,6 @@ import UIKit
 class TOButton: UIButton{
     
    
-    
     var title:String!
     var type:ButtonOptions!
     var radius:CGFloat!
@@ -44,15 +43,14 @@ class TOButton: UIButton{
     }
     
     func squareIcon() {
-      //  self.setImage(UIImage(named: "add-icon"), for: .normal)
+        self.setImage(UIImage(named: "add-icon"), for: .normal)
     }
     
     func roundedText() {
         self.setTitle(self.title, for: .normal)
-        self.setTitleColor(.greyZero, for: .normal)
+        self.setTitleColor(.grayZero, for: .normal)
         self.layer.cornerRadius = self.radius
     }
-
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

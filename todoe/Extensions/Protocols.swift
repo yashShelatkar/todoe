@@ -15,7 +15,7 @@ protocol TOHeaderDelegate {
 }
 
 protocol TONewItemDelegate {
-    func addItemToList()
+    func addItemToList(text:String)
 }
 
 protocol TOListCellDelegate {

@@ -29,7 +29,7 @@ class WelcomeController: UIViewController {
    
     let nextButton = TOButton(title: "START WINING", type: .roundedText)
     
-    let copyRightLabel = TOLabel(title: "© 2019 yashshelatkar", color: .greyOne, size: 14, textAllign: .center)
+    let copyRightLabel = TOLabel(title: "© 2019 yashshelatkar", color: .grayOne, size: 14, textAllign: .center)
     
     @objc func handleNext(){
         UIView.animate(withDuration: 0.1, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
