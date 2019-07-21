@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class GDListCell:UITableViewCell {
+class TOListCell:UITableViewCell {
     
     var delegate:TOListCellDelegate?
     

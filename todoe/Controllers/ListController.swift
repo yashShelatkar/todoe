@@ -41,7 +41,6 @@ class ListController: UIViewController, TONewItemDelegate, TOHeaderDelegate {
     
     let header = TOHeaderView(title: "Stuff to get done", subtitle: "4 left")
     let popup = TONewItemPopup()
-    
     let tbInset:CGFloat = 16
     var bgBottom:NSLayoutConstraint!
     
@@ -52,11 +51,9 @@ class ListController: UIViewController, TONewItemDelegate, TOHeaderDelegate {
     }()
     
     let listTable = TOTableView()
-    
     let CELL_ID = "cell_id"
     
     var listData:[ToDo] = [ToDo]()
-    
     var keyboardHeight:CGFloat = 333
     
     override func viewDidAppear(_ animated: Bool) {
@@ -118,7 +115,7 @@ class ListController: UIViewController, TONewItemDelegate, TOHeaderDelegate {
         
         listTable.delegate = self
         listTable.dataSource = self
-        listTable.register(GDListCell.self, forCellReuseIdentifier: CELL_ID)
+        listTable.register(TOListCell.self, forCellReuseIdentifier: CELL_ID)
         
     }
     
@@ -214,7 +211,7 @@ extension ListController: UITableViewDelegate, UITableViewDataSource, TOListCell
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath) as! GDListCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath) as! TOListCell
         cell.delegate = self
         cell.textField.delegate = self
         var itemsForSection:[ToDo] = []
