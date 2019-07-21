@@ -61,6 +61,7 @@ struct CoreDataManager {
         
         let fetchRequest = NSFetchRequest<ToDo>(entityName: "ToDo")
         
+        
         var toDo:ToDo?
         
         do {

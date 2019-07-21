@@ -22,10 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            print(" family \(family), font names: \(names)")
 //        }
         
-        let wc = WelcomeController()
+        let hasVisitedWelcomeController = UserDefaults.standard.bool(forKey: "welcome-controller-visited")
+        let initialViewController = hasVisitedWelcomeController ? ListController(): WelcomeController()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = wc
+        window?.rootViewController = initialViewController
         return true
     }
 
